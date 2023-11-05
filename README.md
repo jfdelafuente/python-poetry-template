@@ -8,11 +8,15 @@ $ poetry add --group lint flake8 black isort mypy
 
 A few examples of linting your code include:
 
-> poetry run mypy hello_world_cli/cli.py
-> poetry run flake8 hello_world_cli/cli.py
-> poetry run black hello_world_cli/cli.py
+$ poetry run mypy hello_world_cli/cli.py
+
+$ poetry run flake8 hello_world_cli/cli.py
+
+$ poetry run black hello_world_cli/cli.py
 
 ## Testing: PyTest
+
+📚 Las pruebas garantizan que nuestro código se comporte como se esperaba. Como ya sabrás. Hay muchos tipos de pruebas (pruebas unitarias, pruebas de integración, pruebas de un extremo a otro, etc…) pero en este artículo daremos un ejemplo de pruebas unitarias. Las pruebas unitarias son pruebas que verifican la unidad más pequeña de su código (es decir, una función o un método).
 
 We can add the most common python tests package, pytest
 
