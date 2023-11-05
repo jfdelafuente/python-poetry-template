@@ -62,10 +62,16 @@ git commit --no-verify -m "feat: ..."
 
 📚 Ahora que tenemos algunas pruebas y algunos linters, podemos comenzar a automatizar nuestras comprobaciones en el lado del servidor. Si bien existen muchas herramientas que pueden ayudarnos a automatizar nuestras comprobaciones (GitHub Actions, Travis CI, Circle CI, etc.), yo personalmente uso y recomiendo Github Actions (también conocido como GHA).
 
-pendiente
+pendiente: "https://armandsauzay.medium.com/python-project-setup-a-step-by-step-guide-to-industry-best-practices-dbce717b2d12#4-add-some-code"
 
 ## Automatiza nuestro lanzamiento con GitHub Actions
 
 📚 Hemos hablado brevemente sobre linting (usando black, flake8, isort y mypy) y pruebas (usando pytest). La versión es un concepto igualmente importante que nos permite dar versiones a instantáneas específicas de nuestro código. Conceptualmente, asigna un sha de confirmación con un número (v1.2.3).
 
-pendiente
+pendiente: "https://armandsauzay.medium.com/python-project-setup-a-step-by-step-guide-to-industry-best-practices-dbce717b2d12#4-add-some-code"
+
+## Otros
+
+.commitlintrc.yaml: extiende @commitlint/config-conventional, lo que significa que toma la configuración de confirmación predeterminada (con mensajes de confirmación “fix: …” y “feat: …”
+
+.releaserc.json: configuración de complementos sobre cómo liberar nuestro código. Consulte la sección Lanzamiento a continuación para obtener más detalles.
