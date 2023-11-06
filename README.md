@@ -1,5 +1,12 @@
 # python-template
 
+## Poetry
+
+$ poetry init
+
+Si estamos creando un nuevo proyecto podemos también ejecutar directamente:
+poetry new mi-proyecto
+
 ## Linting our code
 
 📚 Ahora que tenemos algunas pruebas, el siguiente paso lógico es comenzar a modificar nuestro código. Linting es el proceso de verificar nuestro código en busca de posibles errores y/o falta de formato. Existen muchos linters (pylint, flake8, black, etc.).
