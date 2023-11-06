@@ -15,7 +15,7 @@ $ poetry add --group lint flake8 black isort mypy
 
 - Code Formating: utilizamos la combinación de black y isort. Añadimos la configuración en pyproject.toml.
 - Code Linting: flake8. Añadimos la configuración en el fichero setup.cfg (tb se podría crear un .flake8)
-- Static Type Checker: mypy. Añadimos la configuración en el fichero setup.cfg
+- Static Type Checker: mypy. Añadimos la configuración en el fichero setup.cfg (tb en pyprojecto.toml)
 
 A few examples of linting your code include:
 
@@ -37,7 +37,7 @@ and the pytest coverage package to shows the code coverage
 
 $ poetry add --group test pytest-cov pytest-sugar
 
-Also, we need to add the test path for the pytest in the setup.cfg
+Also, we need to add the test path for the pytest in the setup.cfg(o en pyprojecto.toml)
 After running them, we can run:
 
 $ poetry run pytest --cov --cov-fail-under=100
