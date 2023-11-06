@@ -13,6 +13,10 @@ poetry new mi-proyecto
 
 $ poetry add --group lint flake8 black isort mypy
 
+- Code Formating: utilizamos la combinación de black y isort. Añadimos la configuración en pyproject.toml.
+- Code Linting: flake8. Añadimos la configuración en el fichero setup.cfg (tb se podría crear un .flake8)
+- Static Type Checker: mypy. Añadimos la configuración en el fichero setup.cfg
+
 A few examples of linting your code include:
 
 $ poetry run mypy hello_world_cli/cli.py
@@ -27,16 +31,21 @@ $ poetry run black hello_world_cli/cli.py
 
 We can add the most common python tests package, pytest
 
-$ poetry add --group dev pytest
+$ poetry add --group test pytest
 
 and the pytest coverage package to shows the code coverage
 
-$ poetry add --group dev pytest-cov
+$ poetry add --group test pytest-cov pytest-sugar
 
 Also, we need to add the test path for the pytest in the setup.cfg
 After running them, we can run:
 
 $ poetry run pytest --cov --cov-fail-under=100
+$ poetry run pytest --cov=informe_sonar --cov-report term-missing --cov-report=html
+
+o sin pytest-sugar:
+
+$ poetry run pytest -p no:sugar
 
 ## Automatización de las comprobaciones locales con pre-commit
 
@@ -64,6 +73,8 @@ You can always run:
 
 git add .
 git commit --no-verify -m "feat: ..."
+
+mas info en: "https://jairoandres.com/pre-commit-para-mejorar-las-revisiones-de-codigo/"
 
 ## Automatice las comprobaciones remotas con GitHub Actions
 
