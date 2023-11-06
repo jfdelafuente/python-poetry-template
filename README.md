@@ -75,3 +75,9 @@ pendiente: "https://armandsauzay.medium.com/python-project-setup-a-step-by-step-
 .commitlintrc.yaml: extiende @commitlint/config-conventional, lo que significa que toma la configuración de confirmación predeterminada (con mensajes de confirmación “fix: …” y “feat: …”
 
 .releaserc.json: configuración de complementos sobre cómo liberar nuestro código. Consulte la sección Lanzamiento a continuación para obtener más detalles.
+
+## Bibliografía
+
+### 🐍 Setting up Python Projects: Part I: Mastering the Art of Python Project Setup: A Step-by-Step Guide
+
+ "https://towardsdatascience.com/setting-up-python-projects-part-i-408603868c08"
